@@ -12,19 +12,18 @@ Lua
 
 1. Scripting language
 2. Dynamic language
-3. Moon in ProtoguÃ©s 
-4. Written in ANSI C
-5. Highly portable
-6. Extremely Fast
+3. Moon in Portuguese
+4. Written in ANSI C :arrow_right: :arrow_right:  Highly portable
+6. Low overhead
 7. Open Source
 
 ---
 
 # :anger: Lua is not 
 
-- Complete full featured programming language Language
-- Game Engine
-- IDE
+- A type-safe language
+- An fully object oriented language 
+
 
 ---
 
@@ -304,6 +303,8 @@ print(#array)
 -- prints 4
 ```
 
+Writing `array[0]` is not illegal, but it will result in `nil`. You can also assign some data for it `array[0] = "Moon!"`
+
 --- 
 
 # Iterating through tables
@@ -329,11 +330,11 @@ end
 
 # Iterating through tables
 
-:arrow_right: You can ignore one of them using `_` :
+:arrow_right: You can use `_` for unwanted parts, but it's still a valid ID  (simply a convention):
 
 ```lua
 for _, v in ipairs(t) do
-	print(i, v)
+	print(v)
 end
 ```
 
@@ -393,7 +394,7 @@ awesome.foo()
 # Notes:
 
 - Any global variable/function within your module will be visible to any source file importing it
-- Localizing and returning an entire package is a good habbit.
+- Localizing and returning an entire package is a good practice.
 
 ---
 
